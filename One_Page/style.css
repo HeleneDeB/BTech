@@ -1,0 +1,228 @@
+/*possibilité de mettre le lien google fonts ici*/
+
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	margin:0;
+	padding:0;
+}
+#home{
+	width:100%;
+	height:800px;
+	background:url(img/home.jpg) no-repeat center center fixed;/*alterner la balise fixed permet un effet de parllax scroll*/
+}
+#home h1{
+	text-align:center;
+	color:#400101;
+	font-size:26pt;
+	font-family: 'Arimo', sans-serif;
+    font-family: 'Merriweather', serif;
+	padding-top:55px;
+}
+#home p{
+	width:600px;
+	background:rgba(217,217,217,0.4);
+	display:block;
+	margin:auto;
+	margin-top:90px;
+	padding:5px;
+	text-align:justify;
+	font-size:14pt;
+	font-weight:250; /*permet de passer le text en gras, pas d'unité les valeurs vont de 5 à 900*/
+	font-family:Verdana;
+	color:#400101;
+	border:5px solid #400101;
+}
+/*on peut manipuler le texte afin qu'il soit sur un élément précis du background
+width:px;
+display:block;
+margin:auto;
+margin top/left:; selon les coordonnées voulues*/
+
+/*Deuxième option pour agrandir le text afin qu'il soit le plus visible
+text-align:center;
+font-size:20pt;
+margin-top:;
+color:;*/
+
+/*3eme option
+width:;
+background:rgba(); red green blue alpha pour la transparence
+display:block;
+margin:auto;
+font-family:;
+font-size:;
+margin-top/left:;
+text-align:justify;
+padding:;
+border:épaisseurenpx style couleur;
+border-radius:permet d'arrondir les angles ;
+*/
+
+#about{
+	width:100%;
+	height:800px;
+	background:url(img/about.jpg) no-repeat center center;/* le no-repeat permet d'éviter que l'image soit en mosaïque si elle est trop petite*/
+}
+#about h2{
+	text-align:center;
+	color:#D98B48;
+	font-size:26pt;
+	font-family:Verdana;
+	padding-top:45px;
+}
+#about p{
+	width:700px;
+	text-align:center;
+	display:block;
+	margin:auto;
+	font-size:20pt;
+	padding:20px;
+	color:#F2B29B;
+	font-weight:600;
+}
+#about img{
+	display:block;
+	margin:auto;
+	padding:10px;
+	border:5px solid white;
+}
+#works{
+	width:100%;
+	height:800px;
+	background:url(img/works.jpg) no-repeat center center fixed;
+}
+#works h3{
+	text-align:center;
+	width:600px;
+	margin-top:25px;
+	display:block;
+	margin:auto;
+	background:rgba(217,217,217,0.4);
+	font-size:26pt;
+	font-family:Verdana;
+	padding-top:5px;
+}
+#works h3:hover{
+	background:rgba(38,38,38,0.6);
+	color:white;
+}
+
+#works .wrap{
+	width:70%;
+	height:600px;
+	display:block;
+	margin:auto;
+}
+#works li{
+	display:inline-block;
+	margin-top:30px;
+	width:300px;
+	height:600px;
+	padding:5px;
+	background:rgba(217,217,217,0.6); /*red green blue alpha*/
+}
+
+#works li:hover{
+	background:rgba(38,38,38,0.6)
+}
+#works li:hover p{
+	color:white;
+}
+#works li:hover h4{ /*Attention! si on le phrase en #works li h4:hover l'effet ne se produira que si on passe sur le titre avec la souris. Le mettre après le hover permet d'avooir l'effet sur toute la zone.*/
+	color:white;
+}
+#works li:hover img{
+	border:13px solid white;
+}
+
+#works h4{
+	text-align:center;
+	font-size:16px;
+	font-family:Verdana;
+}
+#works img{
+	display:block;
+	margin:auto;
+	border:13px solid black; /*taille type couleur*/
+}
+#works p{
+	width:250px;
+	display:block;
+	margin:auto;
+	margin-top:15px;
+	text-align:justify;
+}
+.bouton{
+	width:200px;
+	height:40px;
+	display:block;
+	margin:auto;
+	border-radius:20px;
+}
+.bouton p{
+	line-height:28pt;
+}
+.bouton a{
+	text-decoration:none;
+	color:black;
+	margin-left:18px
+}
+#works li:hover .bouton{
+	background:rgba(217,217,217,0.6)
+}
+
+
+#contact{
+	width:100%;
+	height:800px;
+	background:url(img/contact.jpg) no-repeat center center;
+}
+
+#contact h5{
+	text-align:center;
+	width:600px;
+	display:block;
+	margin:auto;
+	font-size:45pt;
+	font-family:Verdana;
+	padding-top:95px;
+	color:#F2865E;
+	text-decoration:underline overline #F2865E;
+	height:50px;
+	font-family:cursive;
+}
+
+.social{
+	width:70%;
+	height:200px;
+	background:rgba(217,217,217,0.6);
+	display:block;
+	margin:auto;
+	margin-top:200px;
+	text-align:center;
+	border-radius:25pt;
+	border:2px solid #F2865E;
+}
+.social li{
+	display:inline-block;
+	padding:50px;
+	line-height:1px;
+}
+.social i{
+	color:#F2865E;
+}
+
+#contact h5:hover{
+	color:white;
+	text-decoration:underline overline white;
+}
+.social:hover{
+	background:rgba(242,134,94,0.4);
+	border:2px solid white;
+}
+.social:hover i{
+	color:white;
+}
