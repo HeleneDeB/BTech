@@ -1,0 +1,362 @@
+*{
+	margin:0;
+	padding:0;
+}
+font-family: 'Gochi Hand', cursive; /*J'ai déplacé le lien vers le HTML car mes margins * ne fonctionnaient plus...*/
+body{
+	background:pink;
+}
+#acceuil{
+	width:100%;
+	height:800px;
+	background:url(img/acceuil.jpg) no-repeat center center fixed;
+}
+h1{
+	text-align:center;
+	display:block;
+	margin:auto;
+	font-size:76pt;
+	color:white;
+	padding-top:50px;
+	font-family:Gochi Hand;
+	border-radius:70pt;
+	background:rgba(89,2,2,0.6);
+	height:150px;
+	width:600px
+}
+h2{
+	text-align:center;
+	display:block;
+	margin:auto;
+	font-size:46pt;
+	color:white;
+	font-family:Gochi Hand;
+	border-radius:70pt;
+	background:rgba(89,2,2,0.4);
+	margin-top:10px;
+}
+.bouton{
+	width:600px;
+	height:70px;
+	text-align:center;
+	font-size:36pt;
+	background:rgba(3,64,1,0.7);
+	border-radius:70pt;
+	margin:auto;
+	display:block;
+}
+/*j'ai crée une div bouton2 pour la troisème slide pour bien les différencier. Quand pourra-t-on utiliser la commande CSS button?*/
+.bouton a{
+	color:white;
+	text-decoration:none;
+	text-align:center;
+	font-family:Gochi Hand;
+}
+.bouton:hover{
+	background:rgba(217,217,217,0.4)
+}
+.bouton:hover a{
+	color:#034001;
+}
+
+#presentation{
+	width:100%;
+	height:800px;
+	background:url(img/presentation.jpg) no-repeat center center;
+}
+
+
+#Menu{
+	height:320px;
+	width:400px;
+	padding-top:80px;
+	margin-left:-323px;
+}
+#Menu li{
+	height:60px;
+	width:400px;
+	border-radius:60pt;
+	text-align:right;
+	background-color:#022601;
+	border-radius:0px 250px 250px 0px;
+	transition:all 1s ease;
+	padding-top:10px;
+	line-height:17pt;
+}
+#Menu i{
+	width:60px;
+	height:50px;
+	background:white;
+	border-radius:100%;
+	color:black;
+	text-align:center;
+	padding-top:10px;
+	margin-right:10px;
+	line-height:30pt;
+}
+#Menu p{
+	font-size:22pt;
+	color:white;
+	margin-right:17px;
+	line-height:30pt;
+	font-family:Gochi Hand;
+}
+#Menu i, p{
+	display:inline-block;
+	transition:all 1s ease;
+}
+
+
+#Menu i,p{
+	display:inline-block;
+}
+
+#Menu li:hover{
+	transform:translate(230px);
+	background:rgba(255,255,255,0.5);
+}
+#Menu li:hover i{
+	background:#022601;
+	color:white;
+	transform:rotateX(360deg)
+}
+#Menu li:hover p{
+	color:#022601;
+}
+/*Après bien des essais et des casses-têtes j'ai décidé de mettre le menu sur la première slide car je n'arrivais pas trouver un moyen d'aligner les 2 div à des hauteurs différentes...*/
+
+.Blabla{
+	padding-left:10px;
+}
+.Blabla h3{
+	padding-top:30px;
+	font-size:39pt;
+	font-family:Gochi Hand;
+	text-align:center;
+	color:#012615;
+}
+.Blabla p{
+	text-align:justify;
+	font-size:19pt;
+	display:block;
+	margin:auto;
+	font-family:Gochi Hand;
+	width:95%;
+	margin-top:15px;
+	color:#012615;
+}
+.Blabla img{
+	display:block;
+	margin:auto;
+	margin-top:15px;
+	border:5px solid #012615;
+}
+
+
+
+#services{
+	width:100%;
+	height:800px;
+	background:url(img/services.jpg) no-repeat center center fixed;
+}
+
+#services h4{
+	font-size:46pt;
+	padding-top:46px;
+	display:block;
+	margin:auto;
+	text-align:center;
+	font-family:Gochi Hand;
+	color:#590202;
+}
+
+.service{
+	display:block;
+	margin:auto;
+	text-align:center;
+	background-color:rgba(257,257,257,0.3);
+	margin-top:36px;
+}
+.service li{
+	display:inline-block;
+	margin:auto;
+	margin-left:10px;
+	width:300px;
+	height:500px;
+	padding:5px
+}
+.service h5{
+	color:#010D26;
+	font-size:24pt;
+	margin-top:15px;
+	font-family:Gochi Hand;
+	color:#590202;
+}
+.service img{
+	border:4px solid white;
+}
+.service p{
+	font-size:14pt;
+	text-align:justify;
+	font-family:Gochi Hand;
+	color:#590202;
+}
+
+.bouton2{
+	width:250px;
+	height:50px;
+	text-align:center;
+	display:block;
+	margin:auto;
+	margin-top:32px;
+	font-size:23pt;
+	background:rgba(214,214,214,0.7);
+	border-radius:70pt;
+}
+.bouton2 a{
+	color:#590202;
+	text-decoration:none;
+	text-align:center;
+	font-family:Gochi Hand;
+}
+.service li:hover{
+	background:rgba(3,64,1,0.6);
+	border-radius:0px,250px,250px,0px
+}
+.service li:hover{
+	background:rgba(3,64,1,0.4);
+}
+.bouton2:hover{
+	background:rgba(2,2,2,0.4);
+}
+.bouton2:hover a{
+	color:white;
+}
+
+
+#coups{
+	width:100%;
+	height:1000px;
+	background:url(img/coups.jpg) no-repeat center center;
+}
+h6{
+	font-size:46pt;
+	padding-top:46px;
+	display:block;
+	margin:auto;
+	text-align:center;
+	padding-bottom:25px;
+	font-family:Gochi Hand;
+	color:#9ABF75;
+}
+
+.AA, .AB, .AC, .AD, .AE, .AF, .AG, .AH{
+	display:inline-block;
+	width:350px;
+	height:300px;
+}
+#coups img{
+	transition:all linear 1s;
+}
+/*Le combo #coups p ne permettait pas de faire le lien avec les commandes transform*/
+.AA p, .AB p, .AC p, .AD p, .AE p, .AF p, .AG p, .AH p{
+	color:transparent;
+	transition:all linear 0.8s;
+	font-family:Gochi Hand;
+	width:300px;
+}
+.AA img, .AC img, .AE img, .AG img{
+	border:5px solid #012615;
+}
+.AB img, .AD img, .AF img, .AH img{
+	border:5px solid #A62E2E;
+}
+
+.AA:hover img{
+	transform:scale(1.5) translate(100px,0px);
+}
+.AA:hover p{
+	color:#727273;
+	transform:translate(110px,-20px);
+	font-weight:50;
+}
+.AB:hover img{
+	transform:scale(1.5);
+}
+.AB:hover p{
+	color:white;
+	transform:translate(-30px,-15px);
+	font-weight:50;
+}
+.AC:hover img{
+	transform:scale(1.5);
+}
+.AC:hover p{
+	color:white;
+	transform:translate(-40px,-15px);
+	font-weight:50;
+}
+.AD:hover img{
+	transform:scale(1.5);
+}
+.AD:hover p{
+	color:#727273;
+	transform:translate(-40px,-15px);
+	font-weight:50;
+}
+.AE:hover img{
+	transform:scale(1.5) translate(100px);
+}
+.AE:hover p{
+	color:white;
+	transform:translate(115px,-15px);
+	font-weight:50;
+}
+.AF:hover img{
+	transform:scale(1.5);
+}
+.AF:hover p{
+	color:white;
+	transform:translate(-30px,-15px);
+	font-weight:50;
+}
+.AG:hover img{
+	transform:scale(1.5);
+}
+.AG:hover p{
+	color:#727273;
+	transform:translate(-40px,-15px);
+	font-weight:50;
+}
+.AH:hover img{
+	transform:scale(1.5);
+}
+.AH:hover p{
+	color:white;
+	transform:translate(-30px,10px);
+	font-weight:50;
+}
+.social{
+	display:block;
+	margin:auto;
+	width:70%;
+	text-align:center;
+	margin-top:85px;
+	height:100px
+}
+.social li{
+	display:inline-block;
+	margin:auto;
+	padding:15px;
+	margin-bottom:-295px;
+	margin-left:50px;
+}
+.social i{
+	color:#A62E2E;
+	transition:all 0.7s linear;
+}
+
+.social i:hover{
+	color:white;
+	transform:scale(1.4)
+}
